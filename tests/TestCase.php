@@ -9,7 +9,7 @@ class TestCase extends Orchestra
 {
     protected function getPackageProviders($app)
     {
-        // Le indicamos a Orchestra que cargue tu Service Provider
+        // Le indicamos a Orchestra que cargue el Service Provider
         return [
             CurrencyServiceProvider::class,
         ];
