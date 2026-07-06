@@ -7,6 +7,11 @@
             "Zitro\\Currency\\": "src/"
         }
     },
+    "authors": [
+        {
+            "name": "Adolfo Holzer"
+        }
+    ],
     "autoload-dev": {
         "psr-4": {
             "Zitro\\Currency\\Tests\\": "tests/"
@@ -22,7 +27,7 @@
     "require": {
         "illuminate/support": "^10.0 || ^11.0 || ^12.0 || ^13.0"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "require-dev": {
         "pestphp/pest": "^4.7",
