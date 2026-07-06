@@ -1,5 +1,5 @@
 {
-    "name": "adolfoholzer/zitro-currency",
+    "name": "zitro-currency",
     "description": "Manejo de monedas para Laravel",
     "license": "MIT",
     "autoload": {
