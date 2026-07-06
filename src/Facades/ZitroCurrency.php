@@ -4,6 +4,13 @@ namespace Zitro\Currency\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
+/**
+ * @method static string default()
+ * @method static array<string, \Zitro\Currency\Enums\CurrencyType> getEnabled()
+ * @method static bool isEnabled(string $code)
+ * 
+ * @see \Zitro\Currency\Services\CurrencyService
+ */
 class ZitroCurrency extends Facade
 {
     /**

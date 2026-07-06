@@ -5,17 +5,22 @@ use Zitro\Currency\Enums\CurrencyType;
 return [
     /*
     |--------------------------------------------------------------------------
-    | Monedas Habilitadas en la Aplicación
+    | Enabled currencies
     |--------------------------------------------------------------------------
     */
     'enabled' => [
         CurrencyType::PESO_URUGUAYO->value,
-        CurrencyType::DOLAR->value,
+        CurrencyType::USD->value,
     ],
 
     /*
-    | Moneda por defecto del sistema
     |--------------------------------------------------------------------------
+    | Default Currency
+    |--------------------------------------------------------------------------
+    |
+    | This currency will be returned by the CurrencyService whenever the
+    | default currency is requested.
+    |
     */
-    'default' => CurrencyType::PESO_URUGUAYO->value,
+    'default' => env('CURRENCY_DEFAULT', CurrencyType::PESO_URUGUAYO->value),
 ];
