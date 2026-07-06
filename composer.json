@@ -1,6 +1,6 @@
 {
     "name": "zitro/currency",
-    "description": "Manejo y conversión de monedas para Laravel",
+    "description": "Manejo de monedas para Laravel",
     "license": "MIT",
     "autoload": {
         "psr-4": {
