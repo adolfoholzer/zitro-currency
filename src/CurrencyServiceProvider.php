@@ -2,6 +2,7 @@
 
 namespace Zitro\Currency;
 
+use Zitro\Currency\Services\CurrencyService;
 use Illuminate\Support\ServiceProvider;
 
 class CurrencyServiceProvider extends ServiceProvider
@@ -15,8 +16,10 @@ class CurrencyServiceProvider extends ServiceProvider
 
         // Registrar el servicio principal en el contenedor
         $this->app->singleton('zitro-currency', function ($app) {
-            return new \Zitro\Currency\Services\CurrencyService();
+            return new CurrencyService();
         });
+
+        $this->app->alias('zitro-currency', CurrencyService::class);
     }
 
     public function boot()
